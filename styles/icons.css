@@ -1,0 +1,38 @@
+.checkbox-unchecked {
+    display: inline-block;
+	background: url('../img/form-elements-sprite.png') no-repeat -158px -239px;
+	width: 161px;
+	height: 160px;
+}
+
+.checkbox-checked {
+    display: inline-block;
+	background: url('../img/form-elements-sprite.png') no-repeat -381px -239px;
+	width: 161px;
+	height: 160px;
+}
+
+.radioButton-unchecked {
+    display: inline-block;
+    background: url('../img/form-elements-sprite.png') no-repeat -582px -242px;
+	width: 167px;
+	height: 166px;
+}
+
+.radioButton-checked {
+    display: inline-block;
+    background: url('../img/form-elements-sprite.png') no-repeat -812px -242px;
+	width: 168px;
+	height: 166px;
+}
+
+.button {
+    padding: 20px 50px;
+    font-size: 20px;
+}
+
+.button-clicked {
+    background-color: darkgrey;
+    padding: 20px 50px;
+    font-size: 20px;
+}
