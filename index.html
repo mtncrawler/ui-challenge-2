@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <title>UI Challenge 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/icons.css">
 </head>
 <body>
     <h1>UI Challenge 2: Custom Form Elements</h1>
     <h2>text input</h2>
-    <input type='text' name='textInput1'><br>
+    <input type='text' name='textInput1' placeholder = 'placeholder text'>
     <h2>text input w/ validation error</h2>
-    <input type='text' name='textInputValidation'><br>
+    <input type='text' name='textInputValidation' placeholder = 'placeholder text' required>
     <h2>select box</h2>
-    <select name='selectOption'></select><br>
+    <select name='selectOption'>
+        <option value="" disabled selected>please select an option...</option>
+    </select>
     <h2>select box - open</h2>
     <select name='selectBoxOpen'>
         <option value='option1'>option 1</option>
@@ -23,16 +24,22 @@
         <option value='option3'>option 3</option>
         <option value='option4'>option 4</option>
         <option value='option4'>option 5</option>
-    </select><br>
+    </select>
+
     <h2>checkbox</h2>
-    <input type="checkbox" name='checkbox1'>
-    <input type='checkbox' name='checkbox2'><br>
+    <div>
+        <div class='checkbox checkbox-unchecked'></div>
+        <div class='checkbox checkbox-unchecked'></div>
+    </div>
+       
     <h2>radio</h2>
-    <input type='radio' name='radioButton1'>
-    <input type='radio' name='radioButton2'><br>
+    <div class = 'radioDiv'>
+        <div class = 'radioButton radioButton-unchecked'></div>
+        <div class = 'radioButton radioButton-checked'></div>
+    </div>
+    
     <h2>buttons</h2>
-    <input type='submit' name='submitButton1'>
-    <input type='submit' name='submitButton2'>
+    <button class = 'button'>Submit</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="app.js"></script>
